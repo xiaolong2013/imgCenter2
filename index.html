@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>从图片中心选择</title>
+<link rel="stylesheet" type="text/css" href="css/img_center.css"/>
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/webuploader.js'></script>
+<script type='text/javascript' src='js/imgCenter.js'></script>
+<script>
+    $(function(){
+        $(".list li").click(function(){
+		    $.imgOpeBox({
+			    imgTotal:8,
+				imgListObj:$('.list li img'),
+				callback:function(arr){
+					//TODO xxxx
+				    for(var i=0;i<arr.length;i++){
+					   $('.list li:eq('+i+') img').attr("src",arr[i]);
+                    }
+				}		
+	        }); 		   
+        });
+	});
+</script>
+<style>
+  .list li{
+    float:left;
+	margin:2px;
+  }
+</style>
+</head>
+<body>
+  
+  <ul class='list'>
+      <li><img src='img/Chrysanthemum.jpg' width='60' height='60'></li>
+      <li><img src='img/Desert.jpg' width='60' height='60'></li>
+      <li><img src='img/Hydrangeas.jpg' width='60' height='60'></li>
+      <li><img src='img/Jellyfish.jpg' width='60' height='60'></li>
+      <li><img src='img/Koala.jpg' width='60' height='60'></li>
+      <li><img src='img/Lighthouse.jpg' width='60' height='60'></li>
+      <li><img src='img/Tulips.jpg' width='60' height='60'></li>
+      <li><img src='img/Penguins.jpg' width='60' height='60'></li> 
+  </ul>
+  
+  <div style="clear:both;width:100%;height:3200px;">ddddddd</div>
+    
+  </body>
+</html>
