@@ -1,30 +1,4 @@
-/*! 
-* operationbox.js 
-* © 2010-2011 by zhangxinxu http://www.zhangxinxu.com/
-* v1.0 2010-03-20
-* v1.1 2010-04-03 #添加拖拽
-* v1.2 2010-07-12 #修改浏览器高宽以及页面滚动高度获取
-* v2.0 2010-08-01 #重写js，增加可读性，维护性
-*                 #添加问答框确认的回调方法
-*                 #修复浏览器大小变化时黑背景高度不变化的bug，且弹框一直居中显示
-* v3.0 2010-09-05 #修改自定义提示的调用方法
-				  #增加提示方法的回调函数接口
-				  #增加弹窗打开和关闭的回调方法接口
-				  #增加Ajax功能
-				  #增加外框CSS3外阴影效果，美化UI
-				  #弹框关闭以渐隐动画显示
-* v3.1 2010-11-25 #更准确使用$.noop方法
-* v3.2 2010-11-26 #修改些属性，使向下兼容1.3版本
-* v3.3 2010-11-30 #阻止弹框重复关闭执行
-* v3.4 2011-01-21 #修复错别字符，修复IE下弹框高度超过一屏拖拽会隐藏的bug
-* v3.5 2011-03-03 #添加新的api参数protect
-* v3.6 2011-04-06
-* v3.7 2012-06-05 #修复ajax加载页面或html片段含JavaScript脚本时重复执行的bug
-* v3.8 2012-06-12 #修复title记忆shut参数在ajax 加载时不起作用的问题
-* v4.0 2012-06-13 #框架CSS实现大调整
-*/
-//font-size: 18px;font-family: "微软雅黑","黑体";color: #333;text-indent: 12px;float: left;display: block;width: 300px;
-//float: right;margin: 10px 8px 0 0;display: inline-block;width: 19px;height: 18px;text-indent: -9999em;overflow: hidden;background: url("http://style.org.hc360.com/images/my/images/corcenter/mmt4/item-control/contor_icon.png") no-repeat -21px 0px;
+
 (function($) {
 	//给页面装载CSS样式
 	     var LG = 'linear-gradient(top, #fafafa, #eee)', CSS = '<style type="text/css">' +
